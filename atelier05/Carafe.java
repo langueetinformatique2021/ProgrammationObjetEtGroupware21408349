@@ -5,18 +5,37 @@ public class Carafe {
 	
 	/** Création d'une carafe vide
 	 * @param capacite capacité en litres de la carafe */
+
 	public Carafe(int capacite) {
 		this.capacite_ = capacite;
-		this.contenu_ = 0;
+		Vider();
 	}
 	
-	public void Remplir() {}
+	/** Remplir une carafe complétement*/
 	
-	public void Vider() {}
+	public void Remplir() {
+		this.contenu_ = capacite_;
+	}
 	
-	public void Contenu() {}
+	/** Vider une carafe complétement*/
 	
-	public void Capacité() {}
+	public void Vider() {
+		this.contenu_ = 0
+	}
+	
+	/** Ascessuer en lecture
+	 *@return contenu de la carafe en litre*/
+	
+	public void Contenu() {
+		return this.contenu_;
+	}
+	
+	/** Ascessuer en lecture
+	 *@return capacite de la carafe en litre*/
+	
+	public void Capacité() {
+		return  this.capactite_;
+	}
 	
 	public void Transvaser() {}
 		
